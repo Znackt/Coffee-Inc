@@ -16,10 +16,9 @@ module.exports = {
       url: "http://127.0.0.1:8545"
     },
     sepolia: {
-      url: process.env.INFURA_SEPOLIA_KEY,
+      url: `https://sepolia.infura.io/v3/${process.env.INFURA_SEPOLIA_KEY}`,
       accounts: [process.env.PRIVATE_KEY]
-    }
-    // Add other network configurations as needed
+    }    // Add other network configurations as needed
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
