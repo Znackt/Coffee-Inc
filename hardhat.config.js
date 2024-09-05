@@ -8,17 +8,17 @@ module.exports = {
     sources: "./contracts",
     tests: "./test",
     cache: "./cache",
-    artifacts: "./artifacts"
+    artifacts: "./artifacts",
   },
   networks: {
     hardhat: {},
     localhost: {
-      url: "http://127.0.0.1:8545"
+      url: "http://127.0.0.1:8545",
     },
     sepolia: {
       url: `https://sepolia.infura.io/v3/${process.env.INFURA_SEPOLIA_KEY}`,
-      accounts: [process.env.PRIVATE_KEY]
-    }    // Add other network configurations as needed
+      accounts: [process.env.PRIVATE_KEY],
+    }, // Add other network configurations as needed
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
